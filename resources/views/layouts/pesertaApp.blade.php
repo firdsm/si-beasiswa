@@ -111,6 +111,7 @@
                         <a href="index.html"><i class="fi-air-play"></i><span
                                     class="badge badge-success pull-right">1</span> <span> Dashboard </span> </a>
                     </li>
+
                     <li>
                         <a href="javascript: void(0);" aria-expanded="true"><i class="fi-briefcase"></i>
                             <span> UI Kit </span> <span class="menu-arrow"></span></a>
