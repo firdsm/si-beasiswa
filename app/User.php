@@ -15,4 +15,13 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
     public $timestamps = false;
+
+    public function pendaftar()
+    {
+        return $this->hasOne(Pendaftar::class);
+    }
+    public function lembaga()
+    {
+        return $this->hasOne(Lembaga::class);
+    }
 }

@@ -48,7 +48,29 @@
                 return $form_container.valid();
             },
             onFinished: function (event, currentIndex) {
-                alert("Submitted!");
+                $.ajax({
+                    type    :'POST',
+                    headers :{'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                    url     :'/personal/create',
+                    data    :{
+                        'user_id'           : $('#user').val(),
+                        'nama_pendaftar'    : $('#nama').val(),
+                        'gender'            : $('#gender').val(),
+                        'alamat_pendaftar'  : $('#alamat').val(),
+                        'telp'              : $('#telp').val(),
+                        'ipk'               : $('#ipk').val(),
+                        'semester'          : $('#semester').val(),
+                        'nama_ayah'         : $('#namaAyah').val(),
+                        'nama_ibu'          : $('#namaIbu').val(),
+                        'pekerjaan_ayah'    : $('#jobAyah').val(),
+                        'pekerjaan_ibu'     : $('#jobIbu').val(),
+                        'gaji_ayah'         : $('#gajiAyah').val(),
+                        'gaji_ibu'          : $('#gajiIbu').val()
+                    }
+                }).done(function (data) {
+                    console.log(data);
+                    window.location.replace('/personal');
+                })
             }
         });
 

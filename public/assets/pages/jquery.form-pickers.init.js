@@ -29,6 +29,18 @@ jQuery(document).ready(function () {
         autoclose: true,
         todayHighlight: true
     });
+    jQuery('#tanggal').datepicker({
+        autoclose: true,
+        todayHighlight: true
+    });
+    jQuery('#awal').datepicker({
+        autoclose: true,
+        todayHighlight: true
+    });
+    jQuery('#akhir').datepicker({
+        autoclose: true,
+        todayHighlight: true
+    });
     jQuery('#datepicker-inline').datepicker();
     jQuery('#datepicker-multiple-date').datepicker({
         format: "mm/dd/yyyy",
