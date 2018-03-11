@@ -1,4 +1,4 @@
-@extends('layouts.pesertaApp')
+@extends('layouts.lembagaApp')
 
 @section('konten')
     <div class="content-page">

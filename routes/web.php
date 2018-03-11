@@ -40,3 +40,20 @@ Route::get('/organisasi/create', 'OrganisasiController@createView');
 Route::post('/organisasi/create', 'OrganisasiController@create');
 Route::get('/organisasi/download/{id}', 'OrganisasiController@download');
 Route::get('/organisasi/delete/{id}', 'OrganisasiController@delete');
+
+Route::get('/lembaga', 'LembagaController@index');
+Route::get('/lembaga/create', 'LembagaController@createView');
+Route::post('/lembaga/create', 'LembagaController@create');
+Route::get('/lembaga/update', 'LembagaController@updateView');
+Route::post('/lembaga/update', 'LembagaController@update');
+
+Route::get('/beasiswa', 'BeasiswaController@index');
+Route::get('/beasiswa/create', 'BeasiswaController@createView');
+Route::post('/beasiswa/create', 'BeasiswaController@create');
+Route::get('/beasiswa/informasi/update/{id}', 'BeasiswaController@informasi');
+Route::post('/beasiswa/informasi/update/{id}', 'BeasiswaController@updateInformasi');
+Route::get('/beasiswa/kriteria/update/{id}', 'BeasiswaController@kriteria');
+Route::post('/beasiswa/kriteria/update/{id}', 'BeasiswaController@updateKriteria');
+
+Route::get('/oprec/peserta', 'PesertaController@index');
+Route::get('/oprec/rekomendasi', 'PesertaController@index');

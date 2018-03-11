@@ -119,22 +119,21 @@
                     </li>
 
                     <li>
-                        <a href="javascript: void(0);" aria-expanded="true"><i class="fi-command"></i><span> Informasi </span>
+                        <a href="javascript: void(0);" aria-expanded="true"><i class="fi-command"></i><span> Beasiswa </span>
                             <span class="menu-arrow"></span></a>
                         <ul class="nav-second-level nav" aria-expanded="true">
-                            <li><a href="/informasi/kriteria">Kriteria</a></li>
-                            <li><a href="/informasi/beasiswa">Beasiswa</a></li>
-                            <li><a href="/informasi/rekomendasi">Hasil Rekomendasi</a></li>
+                            <li><a href="/lembaga">Informasi Lembaga</a></li>
+                            <li><a href="/beasiswa">Program Beasiswa</a></li>
+                            <li><a href="/beasiswa/history">History Beasiswa</a></li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="javascript: void(0);" aria-expanded="true"><i class="fi-head"></i><span> Pendaftaran </span>
+                        <a href="javascript: void(0);" aria-expanded="true"><i class="fi-head"></i><span> Open Recrutment </span>
                             <span class="menu-arrow"></span></a>
                         <ul class="nav-second-level nav" aria-expanded="true">
-                            <li><a href="/personal">Data Diri</a></li>
-                            <li><a href="/prestasi">Prestasi</a></li>
-                            <li><a href="/organisasi">Organisasi</a></li>
+                            <li><a href="/oprec/peserta">Informasi Peserta</a></li>
+                            <li><a href="/oprec/rekomendasi">Hasil Rekomendasi</a></li>
                         </ul>
                     </li>
 
