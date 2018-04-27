@@ -58,6 +58,8 @@
                         'gender'            : $('#gender').val(),
                         'alamat_pendaftar'  : $('#alamat').val(),
                         'telp'              : $('#telp').val(),
+                        'universitas'       : $('#universitas').val(),
+                        'kota_universitas'  : $('#kota').val(),
                         'ipk'               : $('#ipk').val(),
                         'semester'          : $('#semester').val(),
                         'nama_ayah'         : $('#namaAyah').val(),

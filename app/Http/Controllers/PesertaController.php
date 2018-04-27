@@ -6,10 +6,14 @@ use App\Pendaftar;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
-use Intervention\Image\Image;
 
 class PesertaController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         if (Auth::user()->level_id == 3){
@@ -66,6 +70,8 @@ class PesertaController extends Controller
                 'gender' => $request->gender,
                 'alamat_pendaftar' => $request->alamat,
                 'telp' => $request->telp,
+                'universitas' => $request->universitas,
+                'kota_universitas' => $request->kota,
                 'ipk' => $request->ipk,
                 'semester' => $request->semester,
                 'foto' => $filename
@@ -81,6 +87,8 @@ class PesertaController extends Controller
                 'gender' => $request->gender,
                 'alamat_pendaftar' => $request->alamat,
                 'telp' => $request->telp,
+                'universitas' => $request->universitas,
+                'kota_universitas' => $request->kota,
                 'ipk' => $request->ipk,
                 'semester' => $request->semester
             ]);

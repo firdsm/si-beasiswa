@@ -54,9 +54,9 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label class="col-md-2 control-label">Semester</label>
+                                            <label class="col-md-2 control-label">Alamat Peserta</label>
                                             <div class="col-md-10">
-                                                <input type="text" class="form-control" readonly="" value="{{ $data->semester }}">
+                                                <input type="text" class="form-control" readonly="" value="{{ $data->alamat_pendaftar }}">
                                             </div>
                                         </div>
 
@@ -64,23 +64,37 @@
                                     <div class="col-md-12">
 
                                         <div class="form-group">
-                                            <label class="col-md-2 control-label">IPK</label>
-                                            <div class="col-md-10">
-                                                <input type="text" class="form-control" readonly="" value="{{ $data->ipk }}">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label">Alamat Peserta</label>
-                                            <div class="col-md-10">
-                                                <input type="text" class="form-control" readonly="" value="{{ $data->alamat_pendaftar }}">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
                                             <label class="col-md-2 control-label">No Telepon</label>
                                             <div class="col-md-10">
                                                 <input type="text" class="form-control" readonly="" value="{{ $data->telp }}">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Universitas</label>
+                                            <div class="col-md-10">
+                                                <input type="text" class="form-control" readonly="" value="{{ $data->universitas }}">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Kota Universitas</label>
+                                            <div class="col-md-10">
+                                                <input type="text" class="form-control" readonly="" value="{{ $data->kota_universitas }}">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Semester Saat Ini</label>
+                                            <div class="col-md-10">
+                                                <input type="text" class="form-control" readonly="" value="{{ $data->semester }}">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">IPK</label>
+                                            <div class="col-md-10">
+                                                <input type="text" class="form-control" readonly="" value="{{ $data->ipk }}">
                                             </div>
                                         </div>
 

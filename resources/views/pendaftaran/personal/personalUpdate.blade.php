@@ -65,14 +65,6 @@
                                     <input {{ ($personal->gender == 'L') ? "checked" : "" }} type="radio" name="gender" value="L"> Laki Laki <input {{ ($personal->gender == 'P') ? "checked" : "" }} type="radio" name="gender" value="P"> Perempuan
                                 </div>
                                 <div class="form-group">
-                                    <label for="ipk">IPK<span class="text-danger">*</span></label>
-                                    <input class="form-control" type="text" name="ipk" id="ipk" required value="{{ $personal->ipk }}" placeholder="Masukkan nilai IPK anda (Angka saja)">
-                                </div>
-                                <div class="form-group">
-                                    <label for="semester">Semester<span class="text-danger">*</span></label>
-                                    <input class="form-control" type="text" name="semester" id="semester" required value="{{ $personal->semester }}">
-                                </div>
-                                <div class="form-group">
                                     <label for="alamat">Alamat<span class="text-danger">*</span></label>
                                     <input class="form-control" type="text" name="alamat" id="alamat" required value="{{ $personal->alamat_pendaftar }}">
                                 </div>
@@ -83,6 +75,22 @@
                                 <div class="form-group">
                                     <label for="foto">Foto<span class="text-danger"></span></label>
                                     <input name="foto" id="foto" type="file" class="filestyle" data-buttontext="Select file" data-buttonname="btn-default">
+                                </div>
+                                <div class="form-group">
+                                    <label for="univesitas">Universitas<span class="text-danger">*</span></label>
+                                    <input class="form-control" type="text" name="universitas" id="univesitas" required value="{{ $personal->universitas }}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="kota">Kota Universitas<span class="text-danger">*</span></label>
+                                    <input class="form-control" type="text" name="kota" id="kota" required value="{{ $personal->kota_universitas }}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="semester">Semester<span class="text-danger">*</span></label>
+                                    <input class="form-control" type="text" name="semester" id="semester" required value="{{ $personal->semester }}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ipk">IPK<span class="text-danger">*</span></label>
+                                    <input class="form-control" type="text" name="ipk" id="ipk" required value="{{ $personal->ipk }}" placeholder="Masukkan nilai IPK anda (Angka saja)">
                                 </div>
                                 <div class="form-group text-right m-b-0">
                                     <button class="btn btn-primary waves-effect waves-light" type="submit">

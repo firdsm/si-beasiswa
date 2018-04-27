@@ -8,7 +8,7 @@ class Pendaftar extends Model
 {
     protected $table = 'pendaftar';
     public $timestamps = false;
-    protected $fillable = ['user_id', 'nama_pendaftar', 'gender', 'alamat_pendaftar', 'telp', 'ipk', 'semester', 'foto', 'nama_ayah', 'nama_ibu', 'pekerjaan_ayah', 'pekerjaan_ibu', 'gaji_ayah', 'gaji_ibu'];
+    protected $fillable = ['user_id', 'nama_pendaftar', 'gender', 'alamat_pendaftar', 'telp', 'universitas', 'kota_universitas', 'ipk', 'semester', 'foto', 'nama_ayah', 'nama_ibu', 'pekerjaan_ayah', 'pekerjaan_ibu', 'gaji_ayah', 'gaji_ibu'];
 
     public function user()
     {

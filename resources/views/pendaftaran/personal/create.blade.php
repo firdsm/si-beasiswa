@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="page-title-box">
-                            <h4 class="page-title">Welcome John !</h4>
+                            <h4 class="page-title">Welcome {{ \Illuminate\Support\Facades\Auth::user()->nama_user }}</h4>
                             <ol class="breadcrumb p-0 m-0">
                                 <li>
                                     <a href="#">Codefox</a>
@@ -35,9 +35,9 @@
                                 Isilah data berikut dengan benar sebagai informasi Data diri.
                             </p>
 
-                            <form id="wizard-validation-form" action="#">
+                            <form id="wizard-validation-form" action="#" enctype="multipart/form-data">
                                 <div>
-                                    <h3>Step 1</h3>
+                                    <h3>Personal Info</h3>
                                     <section>
 
                                         <div class="form-group clearfix">
@@ -58,7 +58,12 @@
                                         <div class="form-group clearfix">
                                             <label class="col-lg-2 control-label " for="gender"> Gender *</label>
                                             <div class="col-lg-10">
-                                                <input id="gender" name="gender" type="text" class="required form-control">
+                                                <div class="col-md-1">
+                                                    <input type="radio" name="gender" value="L"> Laki Laki
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <input type="radio" name="gender" value="P"> Perempuan
+                                                </div>
                                             </div>
                                         </div>
 
@@ -70,25 +75,11 @@
                                         </div>
 
                                         <div class="form-group clearfix">
-                                            <label class="col-lg-2 control-label " for="semester"> Semester Saat ini *</label>
-                                            <div class="col-lg-10">
-                                                <input id="semester" name="semester" type="text" class="required form-control">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group clearfix">
-                                            <label class="col-lg-2 control-label " for="ipk"> IPK *</label>
-                                            <div class="col-lg-10">
-                                                <input id="ipk" name="ipk" type="text" class="required form-control">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group clearfix">
                                             <label class="col-lg-12 control-label ">(*) Wajib diisi</label>
                                         </div>
 
                                     </section>
-                                    <h3>Step 2</h3>
+                                    <h3>Parents Info</h3>
                                     <section>
 
                                         <div class="form-group clearfix">
@@ -133,26 +124,41 @@
                                         </div>
 
                                     </section>
-                                    <h3>Step 3</h3>
+                                    <h3>College Info</h3>
                                     <section>
+
                                         <div class="form-group clearfix">
-                                            <div class="col-lg-12">
-                                                <ul class="list-unstyled w-list">
-                                                    <li><b>Nama Peserta :</b> Jonathan </li>
-                                                    <li><b>Alamat :</b> Smith </li>
-                                                    <li><b>Gender :</b> jonathan@smith.com</li>
-                                                    <li><b>No Telp :</b> 123 Your City, Cityname. </li>
-                                                    <li><b>Semester :</b> Jonathan </li>
-                                                    <li><b>IPK :</b> Smith </li>
-                                                    <li><b>Nama Ayah :</b> jonathan@smith.com</li>
-                                                    <li><b>Nama Ibu :</b> 123 Your City, Cityname. </li>
-                                                    <li><b>Pekerjaan Ayah :</b> Jonathan </li>
-                                                    <li><b>Pekerjaan Ibu :</b> Smith </li>
-                                                    <li><b>Gaji Ayah :</b> jonathan@smith.com</li>
-                                                    <li><b>Gaji Ibu :</b> 123 Your City, Cityname. </li>
-                                                </ul>
+                                            <label class="col-lg-2 control-label " for="universitas"> Nama Universitas *</label>
+                                            <div class="col-lg-10">
+                                                <input id="universitas" name="universitas" type="text" class="required form-control">
                                             </div>
                                         </div>
+
+                                        <div class="form-group clearfix">
+                                            <label class="col-lg-2 control-label " for="kota">Kota Universitas *</label>
+                                            <div class="col-lg-10">
+                                                <input id="kota" name="kota" type="text" class="required form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group clearfix">
+                                            <label class="col-lg-2 control-label " for="semester"> Semester Saat ini *</label>
+                                            <div class="col-lg-10">
+                                                <input id="semester" name="semester" type="text" class="required form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group clearfix">
+                                            <label class="col-lg-2 control-label " for="ipk"> IPK *</label>
+                                            <div class="col-lg-10">
+                                                <input id="ipk" name="ipk" type="text" class="required form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group clearfix">
+                                            <label class="col-lg-12 control-label ">(*) Wajib diisi</label>
+                                        </div>
+
                                     </section>
                                     <h3>Step Final</h3>
                                     <section>
@@ -174,5 +180,6 @@
 @endsection
 
 @section('script')
+    <script src="/plugins/bootstrap-filestyle/js/bootstrap-filestyle.min.js" type="text/javascript"></script>
     <script src="/assets/pages/jquery.wizard-init.js" type="text/javascript"></script>
 @endsection
